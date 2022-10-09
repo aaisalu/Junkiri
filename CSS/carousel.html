@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #f8f9fa;
+        background-color: #292524;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .carousel {
+        display: grid;
+        max-width: 80rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9.2rem;
+        background: linear-gradient(#047857, #0f766e);
+        padding: 1.8rem 3.8rem 1.8rem 7.6rem;
+        border-radius: 0.8rem;
+        align-items: center;
+        box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.111);
+        position: relative;
+      }
+
+      .carousel-img img {
+        width: 100%;
+        max-height: 16rem;
+        transform: scale(1.6);
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.11);
+      }
+
+      .testomonial {
+        grid-column: 2/-1;
+        position: relative;
+      }
+      .testomonial::after {
+        content: "\201C";
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 7.8rem;
+        top: -20%;
+        left: -7.2%;
+        color: #f5f5f5;
+      }
+
+      .testomonial-text {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        color: #eefaf5;
+        font-weight: 500;
+        margin-bottom: 2.2rem;
+      }
+      .testomonial-author {
+        font-size: 1.2rem;
+        color: #d1fae5;
+        margin-bottom: 4px;
+      }
+      .testomonial-position {
+        color: #d1fae5;
+
+        font-size: 1rem;
+      }
+      .btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        transition: all 0.2s;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+      }
+      .btn--icon {
+        font-size: 2.6rem;
+        padding: 4px;
+        color: #047857;
+      }
+      .btn--left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      .btn:hover .btn--icon {
+        color: #065f46;
+      }
+      .nav-bar {
+        position: absolute;
+        display: flex;
+        gap: 0.6rem;
+        bottom: 0;
+        left: 35%;
+        transform: translate(50%, 180%);
+      }
+      .nav-btn {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        border: 3px solid #047857;
+        background-color: inherit;
+      }
+      .nav-btn-open {
+        background-color: #047857;
+      }
+    </style>
+    <title>Carousel</title>
+  </head>
+
+  <body>
+    <div class="carousel">
+      <div class="carousel-img">
+        <img src="../gallery/canel.jpg" />
+      </div>
+      <blockquote class="testomonial">
+        <p class="testomonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          repellendus. Provident, optio error quaerat molestiae adipisci eius.
+        </p>
+        <p class="testomonial-author">Hendry Ford</p>
+        <p class="testomonial-position">CEO</p>
+      </blockquote>
+      <button class="btn btn--left">
+        <ion-icon class="btn--icon" name="chevron-back"></ion-icon>
+      </button>
+      <button class="btn btn--right">
+        <ion-icon class="btn--icon" name="chevron-forward"></ion-icon>
+      </button>
+      <div class="nav-bar">
+        <button class="nav-btn nav-btn-open">&nbsp;</button>
+        <button class="nav-btn">&nbsp;</button>
+        <button class="nav-btn">&nbsp;</button>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
