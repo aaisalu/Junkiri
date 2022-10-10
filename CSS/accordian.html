@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        color: #f8f9fa;
+        background-color: #292524;
+        font-family: "Inter", sans-serif;
+        height: 100vh;
+      }
+      .container {
+        width: 80rem;
+        margin: 10.2rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+      }
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        column-gap: 3.2rem;
+        row-gap: 2.4rem;
+        background-color: #495057;
+        padding: 3.2rem;
+        box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.105);
+      }
+      .item-box {
+        grid-column: 2/3;
+      }
+
+      .item-number {
+        color: #adb5bd91;
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+      .item-title,
+      .item-icon {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #ced4dac5;
+      }
+      .item-box .item-desc {
+        font-size: 1.8rem;
+        letter-spacing: 0.1px;
+        line-height: 1.5;
+        color: #dee2e6;
+        margin-bottom: 1.8rem;
+      }
+      .item-box .item-lists {
+        list-style: square;
+        font-size: 1.6rem;
+        margin-left: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        color: #adb5bd;
+      }
+
+      .hideme {
+        display: none;
+      }
+      .open-box .hideme {
+        display: block;
+      }
+      .open-box .item-number,
+      .open-box .item-title,
+      .open-box .item-icon {
+        color: #34f4aeee;
+      }
+      .open-box {
+        border-top: 4px solid#34f4aec6;
+      }
+    </style>
+    <title>Accordian</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p class="item-number">01</p>
+        <p class="item-title">Hello How are You doing these days!</p>
+        <div class="item-icon">
+          <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+        <div class="item-box hideme">
+          <p class="item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus mollitia deserunt, animi fugit tempora blanditiis
+            veritatis earum architecto dolor corrupti, sed sequi numquam saepe
+            magnam, possimus assumenda illum porro! Harum.
+          </p>
+          <ul class="item-lists">
+            <li>
+              sit amet consectetur adipisicing elit. Mollitia doloribus optio
+              earum illum
+            </li>
+            <li>
+              consectetur adipisicing elit. Mollitia doloribus optio earum illum
+            </li>
+            <li>
+              tae aperiam excepturi dolorum? Quis molestiae odit quidem
+              doloribus eaque illum.
+            </li>
+            <li>
+              Quis molestiae odit quidem doloribus eaque illum. Lorem ipsum
+              dolor sit amet.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item open-box">
+        <p class="item-number">02</p>
+        <p class="item-title">How'r u spending time !</p>
+        <div class="item-icon">
+          <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+        <div class="item-box hideme">
+          <p class="item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus mollitia deserunt, animi fugit tempora blanditiis
+            veritatis earum architecto dolor corrupti, sed sequi numquam saepe
+            magnam, possimus assumenda illum porro! Harum.
+          </p>
+          <ul class="item-lists">
+            <li>
+              sit amet consectetur adipisicing elit. Mollitia doloribus optio
+              earum illum
+            </li>
+            <li>
+              consectetur adipisicing elit. Mollitia doloribus optio earum illum
+            </li>
+            <li>
+              tae aperiam excepturi dolorum? Quis molestiae odit quidem
+              doloribus eaque illum.
+            </li>
+            <li>
+              Quis molestiae odit quidem doloribus eaque illum. Lorem ipsum
+              dolor sit amet.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="item-number">03</p>
+        <p class="item-title">Look at my new pc !</p>
+        <div class="item-icon">
+          <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+        <div class="item-box hideme">
+          <p class="item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus mollitia deserunt, animi fugit tempora blanditiis
+            veritatis earum architecto dolor corrupti, sed sequi numquam saepe
+            magnam, possimus assumenda illum porro! Harum.
+          </p>
+          <ul class="item-lists">
+            <li>
+              sit amet consectetur adipisicing elit. Mollitia doloribus optio
+              earum illum
+            </li>
+            <li>
+              consectetur adipisicing elit. Mollitia doloribus optio earum illum
+            </li>
+            <li>
+              tae aperiam excepturi dolorum? Quis molestiae odit quidem
+              doloribus eaque illum.
+            </li>
+            <li>
+              Quis molestiae odit quidem doloribus eaque illum. Lorem ipsum
+              dolor sit amet.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
