@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #27272a;
+        color: #f8f9fa;
+        display: grid;
+        place-items: center center;
+        margin-top: 35.2rem;
+      }
+      .nav-lists {
+        display: flex;
+        list-style: none;
+        gap: 4.2rem;
+      }
+
+      .navigation a {
+        display: inline-block;
+        font-size: 5.2rem;
+        text-decoration: none;
+        transition: all 0.2s;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 8px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.542);
+      }
+
+      .navigation a::after {
+        content: "";
+        border-radius: 8px;
+        position: absolute;
+        width: 0;
+        height: 0.8rem;
+        background: linear-gradient(to right, #e96443, #ca228e);
+        bottom: 0;
+        left: 50%;
+        transition: all 0.5s;
+        transform: translate(-50%);
+      }
+
+      .navigation a:hover {
+        overflow: visible;
+        color: #fff;
+      }
+      a:hover::after {
+        width: 85%;
+      }
+    </style>
+    <title>navigation</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul class="nav-lists">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">System</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Server</a></li>
+        <li><a href="#">User</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
