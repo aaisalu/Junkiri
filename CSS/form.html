@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #f8f9fa;
+        background-color: #292524;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .container {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 3.2rem 0;
+      }
+      .cta {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: #698474;
+        overflow: hidden;
+        color: #2a352e;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.113);
+      }
+      .form-img {
+        background-image: linear-gradient(
+            rgba(8, 93, 65, 0.163),
+            rgba(10, 111, 77, 0.107)
+          ),
+          url(../gallery/forest.jpg);
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+      }
+      .form-text-box {
+        padding: 3.8rem 5.8rem 5.8rem;
+      }
+      .heading-secondary {
+        font-size: 4.4rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        margin-bottom: 2.8rem;
+      }
+      .form-text {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        letter-spacing: 0.1px;
+        margin-bottom: 4.8rem;
+      }
+      .form-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4.2rem;
+        row-gap: 3.2rem;
+      }
+      .form-data label {
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+      }
+      .form-data input,
+      .form-data select {
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: 0.8rem;
+        border: none;
+        font-size: 1.6rem;
+        font-family: inherit;
+        box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+        background-color: #f0ece2;
+        color: #3f4f46;
+      }
+
+      .form-data input::placeholder {
+        color: #5f7768;
+      }
+      *:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.8rem rgba(255, 222, 207, 0.105);
+      }
+      .cta *:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.8rem rgba(255, 222, 207, 0.105);
+      }
+      .btn {
+        display: inline-block;
+        font-family: inherit;
+        font-size: 1.6rem;
+        padding: 1.2rem;
+        border-radius: 0.8rem;
+        border: none;
+      }
+      .btn-form {
+        color: #35423a;
+        font-weight: 500;
+        align-self: end;
+        transition: all 0.2s;
+      }
+      .btn-form:hover {
+        background-image: linear-gradient(
+          to right,
+          rgba(210, 218, 213, 0.101),
+          rgba(210, 218, 213, 0.104)
+        );
+        color: #1f2823;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cta">
+        <div class="form-text-box">
+          <h2 class="heading-secondary">Join the next adventure with us!</h2>
+          <p class="form-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum
+            animi, maiores necessitatibus quibusdam velit modi illo sapiente
+            ullam totam? Quaerat quasi incidunt esse reiciendis ipsa tempore
+            saepe deleniti! Nulla.
+          </p>
+          <form class="form-data">
+            <div>
+              <label for="full_name">Full Name</label>
+              <input id="full_name" type="text" placeholder="Full Name" />
+            </div>
+            <div>
+              <label for="emailme">Email Address</label>
+              <input id="emailme" type="email" placeholder="example@xyz.com" />
+            </div>
+            <div>
+              <label for="emailme">Which package would you like choose?</label>
+              <select>
+                <option value="">Please choose travel package</option>
+                <option value="basic">Basic Package</option>
+                <option value="Intermediate">Intermediate Package</option>
+                <option value="Luxurious">Luxurious Package</option>
+              </select>
+            </div>
+            <button class="btn btn-form">Sign up now</button>
+          </form>
+        </div>
+        <div class="form-img"></div>
+      </div>
+    </div>
+  </body>
+</html>
