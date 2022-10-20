@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      color: #f8f9fa;
+      background-color: #292524;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      margin-top: 18rem;
+    }
+    input[type="checkbox"].toggle {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    input[type="checkbox"].toggle + label.wrap_checkbox {
+      position: relative;
+      font-size: 8px;
+      font-weight: 500;
+    }
+    input[type="checkbox"].toggle + label.checkbox {
+      display: block;
+      width: 18rem;
+      height: 2.8rem;
+      background-color: #8e8986;
+      position: relative;
+      border-radius: 1.8rem;
+    }
+    input[type="checkbox"].toggle + label.checkbox::before {
+      content: attr(Dark_on);
+      top: 8px;
+      position: absolute;
+      right: 25px;
+      color: #000;
+    }
+
+    input[type="checkbox"].toggle + label.checkbox::after {
+      content: attr(Dark_off);
+      text-align: center;
+      width: 9rem;
+      height: 1.2rem;
+      top: 2px;
+      border-radius: 1.8rem;
+      position: absolute;
+      left: 2px;
+      background-color: #d5cdca;
+      color: #000;
+      padding: 6px 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    input[type="checkbox"].toggle:checked + label.checkbox::before {
+      content: attr(dark_off);
+      left: 25px;
+      color: #fff;
+    }
+    input[type="checkbox"].toggle:checked + label.checkbox::after {
+      content: attr(dark_on);
+      left: 88px;
+      background-color: #181716;
+      color: #fff;
+    }
+    input[type="checkbox"].toggle:focus + label.checkbox {
+      outline: 2px solid #beb6b3;
+    }
+  </style>
+  <body>
+    <label class="wrap_checkbox">
+      <input id="chk_mode" class="toggle" type="checkbox" />
+      <label
+        class="checkbox"
+        dark_on="Dark"
+        dark_off="Light"
+        for="chk_mode"
+      ></label>
+    </label>
+  </body>
+</html>
