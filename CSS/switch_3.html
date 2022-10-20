@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      color: #f8f9fa;
+      background-color: #292524;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      margin-top: 18rem;
+    }
+    input[type="checkbox"].toggle {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    input[type="checkbox"].toggle + label.checkbox {
+      width: 6.2rem;
+      height: 1.4rem;
+      background-color: #c8dbbe;
+      border-radius: 1rem;
+      position: relative;
+      transition: 0.5s;
+    }
+    input[type="checkbox"].toggle + label.checkbox::before {
+      content: "";
+      width: 3.2rem;
+      height: 3.2rem;
+      background-color: #749f82;
+      top: 50%;
+      transform: translate(-20%, -50%);
+      border-radius: 50%;
+      position: absolute;
+      transition: inherit;
+    }
+    input[type="checkbox"].toggle + label.checkbox::after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid #c8dbbe;
+      border-radius: 50%;
+      background-color: #c8dbbe;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 0;
+      position: absolute;
+      transition: inherit;
+    }
+
+    input[type="checkbox"].toggle:checked + label.checkbox::after {
+      width: 0;
+      left: 5.8rem;
+      border-radius: 2px;
+      background-color: #c8dbbe;
+    }
+    input[type="checkbox"].toggle:checked + label.checkbox::before {
+      transform: translate(135%, -50%);
+    }
+  </style>
+  <body>
+    <input class="toggle" type="checkbox" id="chk" />
+    <label for="chk" class="checkbox"></label>
+  </body>
+</html>
