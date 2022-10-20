@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      color: #f8f9fa;
+      background-color: #292524;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      margin-top: 18rem;
+    }
+    input[type="checkbox"].toggle {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    input[type="checkbox"].toggle + label {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+      font-size: 8px;
+      font-weight: 500;
+      margin: 0;
+    }
+    input[type="checkbox"].toggle + label::before {
+      content: "";
+      top: 55px;
+      width: 12rem;
+      height: 2.2rem;
+      border-radius: 1.8rem;
+      background-color: #a6a09d;
+    }
+
+    input[type="checkbox"].toggle + label::after {
+      content: attr(Dark_off);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 5.5rem;
+      width: 6rem;
+      height: 1.5rem;
+      border-radius: 1.8rem;
+      position: absolute;
+      left: 2px;
+      background-color: #ede4e0;
+      color: #000;
+      padding: 2px 0px;
+
+      transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
+    }
+    input[type="checkbox"].toggle:checked + label::before {
+      background-color: #5f5b5a;
+    }
+    input[type="checkbox"].toggle:checked + label::after {
+      content: attr(dark_on);
+      transform: translateX(93%);
+      background-color: #2f2e2d;
+      color: #fff;
+    }
+    input[type="checkbox"].toggle:focus + label::before {
+      outline: 2px solid #b2b2b2;
+    }
+  </style>
+  <body>
+    <input id="chk_mode" class="toggle" type="checkbox" />
+    <label dark_on="Dark" dark_off="Light" for="chk_mode"></label>
+  </body>
+</html>
