@@ -34,49 +34,76 @@
     }
     input[type="checkbox"].toggle + label.checkbox {
       width: 6.2rem;
-      height: 1.4rem;
-      background-color: #c8dbbe;
-      border-radius: 1rem;
-      position: relative;
-      transition: 0.5s;
+      height: 2.2rem;
+      background-color: #dfb0a2;
+      border-radius: 3.2rem;
+      position: absolute;
+      transition: background-color 0.5s ease-in-out, left 0.5s ease-in-out,
+        transform 0.5s ease-in-out;
     }
     input[type="checkbox"].toggle + label.checkbox::before {
       content: "";
       width: 3.2rem;
       height: 3.2rem;
-      background-color: #749f82;
       top: 50%;
       transform: translate(-20%, -50%);
       border-radius: 50%;
       position: absolute;
       transition: inherit;
+      background-color: #eee;
     }
     input[type="checkbox"].toggle + label.checkbox::after {
       content: "";
-      width: 2rem;
-      height: 2rem;
-      border: 2px solid #c8dbbe;
+      width: 1.8rem;
+      height: 1.8rem;
+      border: 2px solid #f96666;
       border-radius: 50%;
-      background-color: #c8dbbe;
       transform: translateY(-50%);
       top: 50%;
       left: 0;
       position: absolute;
-      transition: inherit;
+      transition: all 0.5s ease-in-out;
     }
-
+    input[type="checkbox"].toggle:checked + label.checkbox {
+      background-color: #c8dbbe;
+    }
     input[type="checkbox"].toggle:checked + label.checkbox::after {
       width: 0;
       left: 5.8rem;
       border-radius: 2px;
-      background-color: #c8dbbe;
+      border-color: #749f82;
+      background-color: #749f82;
     }
     input[type="checkbox"].toggle:checked + label.checkbox::before {
       transform: translate(135%, -50%);
     }
+    .container {
+      position: relative;
+      width: 58rem;
+      height: 48.8rem;
+      background-color: #2f2e2d;
+      display: grid;
+      place-items: center;
+    }
+    h2 {
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+      filter: blur(4px);
+      font-weight: 600;
+      transition: all 0.1s;
+    }
+    h2:hover {
+      filter: blur(0);
+    }
+    input[type="checkbox"]:focus + label.checkbox {
+      outline: 2px solid #b73e3e;
+    }
   </style>
   <body>
-    <input class="toggle" type="checkbox" id="chk" />
-    <label for="chk" class="checkbox"></label>
+    <div class="container">
+      <h2>TOGGLE ME!</h2>
+      <input class="toggle" type="checkbox" id="chk" />
+      <label for="chk" class="checkbox"></label>
+    </div>
   </body>
 </html>
