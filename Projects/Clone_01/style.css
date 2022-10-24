@@ -257,7 +257,8 @@ img {
   height: 100%;
   /* background-color: rgba(186, 181, 181, 0.7); */
   /* background-color: rgba(255, 255, 255, 0.7); */
-  background-color: rgba(102, 140, 95, 0.132);
+  /* background-color: rgba(102, 140, 95, 0.132); */
+  background-color: hsla(0, 0%, 97.7%, 0.5);
   /* left: 43.2px;
   top: 23.3px; */
   left: 7.3%;
@@ -300,6 +301,9 @@ img {
 
 .outline--white {
   border: 2px solid var(--white);
+}
+.outline--grey {
+  border: 2px solid var(--grey-200);
 }
 
 .heading-secondary {
@@ -381,9 +385,9 @@ img {
 }
 .subheading {
   display: inline-block;
-  background-color: var(--blue-100);
+  background-color: var(--green-100);
   padding: 4px 12px;
-  color: var(--blue-800);
+  color: var(--green-800);
   text-transform: uppercase;
   font-size: 1.2rem;
   border-radius: var(--border-radius-small);
@@ -413,8 +417,12 @@ img {
 .icon-quote {
   width: 3.8rem;
   height: 3.8rem;
-  filter: invert(62%) sepia(29%) saturate(1099%) hue-rotate(183deg)
-    brightness(100%) contrast(90%);
+  filter: invert(35%) sepia(12%) saturate(6125%) hue-rotate(125deg)
+    brightness(97%) contrast(91%);
+}
+
+.feature-quote {
+  margin-bottom: 3.2rem;
 }
 .feature-logo {
   height: 4.2rem;
@@ -422,8 +430,8 @@ img {
   margin-top: 3.2rem;
 }
 
-.feature-text {
-  margin-top: 3.2rem;
+.feature-text,
+.testomonial-text {
   line-height: 1.5;
   font-weight: 500;
   font-size: 1.6rem;
@@ -495,4 +503,61 @@ img {
 
 .story-imgs:hover .story-img {
   transform: scale(1.1);
+}
+
+.section-testomonials {
+  padding: 9.6rem 0;
+}
+.testomonials-container {
+  padding: 8rem 0;
+  position: relative;
+}
+.testomonial-heading {
+  padding: 0 18rem;
+}
+
+.testomonial {
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.101);
+  border-bottom: 4px solid var(--green-800);
+  background-color: var(--white);
+}
+
+.testomonial-img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 1.4rem;
+  color: var(--grey-700);
+  margin-bottom: 4px;
+}
+
+.author-company {
+  color: var(--grey-600);
+}
+
+.invert-color {
+  color: var(--white) !important;
+}
+.colorized-background {
+  position: absolute;
+  background-color: var(--green-800);
+  width: 85%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.rating .icon-md {
+  color: var(--green-800);
 }
