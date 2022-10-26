@@ -112,6 +112,12 @@ img {
   display: inline-block;
   color: var(--green-900);
 }
+.initial-link:visited,
+.initial-link:link {
+  text-decoration: none;
+  color: #536dfe;
+  font-weight: 600;
+}
 
 /**************************/
 /* Icon group */
@@ -144,11 +150,18 @@ img {
   font-size: 1.4rem;
   border-radius: var(--border-radius-small);
 }
+
 .btn--md {
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: var(--border-radius-medium);
+}
+.btn--lr {
   padding: 18px 28px;
   font-size: 1.8rem;
   border-radius: var(--border-radius-medium);
 }
+
 .btn-outline {
   box-shadow: inset 0 0 0 1px var(--grey-200);
   background-color: var(--white);
@@ -247,6 +260,9 @@ img {
 .grey-color {
   color: var(--grey-400);
 }
+.invert-color {
+  color: var(--white) !important;
+}
 /**************************/
 /* Flex group */
 /**************************/
@@ -277,6 +293,15 @@ img {
 }
 
 /**************************/
+/* Selfish group */
+/**************************/
+.self-center-v {
+  align-self: center;
+}
+.self-center-h {
+  justify-self: center;
+}
+/**************************/
 /* Grid group */
 /**************************/
 
@@ -284,12 +309,6 @@ img {
   display: grid;
   column-gap: 6.8rem;
   row-gap: 5.2rem;
-}
-.grid-center-v {
-  align-self: center;
-}
-.grid-center-h {
-  justify-self: center;
 }
 
 .grid--col-2 {
@@ -322,7 +341,7 @@ img {
 .subheading {
   display: inline-block;
   background-color: var(--green-100);
-  padding: 4px 12px;
+  padding: 8px 12px;
   color: var(--green-800);
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -340,20 +359,12 @@ img {
 .text-center {
   text-align: center;
 }
-.invert-color {
-  color: var(--white) !important;
-}
+
 .lists {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 2.4rem;
-}
-
-.inital-link {
-  text-decoration: none;
-  color: #536dfe;
-  font-weight: 600;
 }
 
 *:focus {
