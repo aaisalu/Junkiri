@@ -220,7 +220,7 @@
             alias magnam et nisi placeat veritatis deleniti quisquam
             reprehenderit
           </p>
-          <div class="standout-feature-group flex gap--md grid-center-h">
+          <div class="grid-col-all flex gap--md grid-center-h">
             <span class="standout-feature flex">
               <ion-icon name="checkmark-outline" class="icon-md"></ion-icon>
               <p class="standout-feature-text">Rock climbing</p>
@@ -315,7 +315,11 @@
               </div>
             </figure>
           </div>
-          <div class="colorized-background"></div>
+          <div
+            class="colorized-background"
+            role="img"
+            aria-label="background image "
+          ></div>
         </div>
       </section>
       <section class="section-illustration">
@@ -388,7 +392,7 @@
               <input type="checkbox" id="toggle" class="togglebtn" />
               <label
                 plan_year="Year"
-                plan_month="Month"
+                plan_month="Month "
                 for="toggle"
                 class="checkbox"
               ></label>
@@ -623,7 +627,150 @@
           </p>
         </div>
       </section>
+      <section class="section-cta">
+        <div class="container grid cta-container grid--col-2">
+          <div class="cta-wrap">
+            <div class="cta-header">
+              <h3 class="heading-tertiary margin-bottom-sm">Sign up</h3>
+              <p class="regular-text">
+                Travel, because money returns. Time doesn’t
+              </p>
+            </div>
+            <div class="cta-btn-wrap cta-grid grid--col-2">
+              <a href="#" class="btn-outline btn--cta flex">
+                <ion-icon name="logo-google" class="icon-md"></ion-icon
+                ><span>Sign up with Google</span></a
+              >
+              <a href="#" class="btn-outline btn--cta flex">
+                <ion-icon name="logo-facebook" class="icon-md"></ion-icon
+                ><span>Sign up with Facebook</span>
+              </a>
+            </div>
+            <form class="cta-form cta-grid grid--col-2">
+              <div>
+                <label class="cta-label" for="cta-name">Full Name</label>
+                <input
+                  class="cta-input"
+                  id="cta-name"
+                  type="text"
+                  placeholder="Luke Frei"
+                />
+              </div>
+              <div>
+                <label class="cta-label" for="cta-email">Email</label>
+                <input
+                  class="cta-input"
+                  id="cta-email"
+                  type="email"
+                  placeholder="example@xyz.com"
+                />
+              </div>
+              <!-- <div>
+                <label class="cta-label" for="cta-age">Age</label>
+                <input
+                  class="cta-input"
+                  id="cta-age"
+                  type="number"
+                  placeholder="18+"
+                />
+              </div>
+              <div>
+                <label class="cta-label" for="cta-element">Travel Suite</label>
+                <select id="cta-element" class="select-dropdown">
+                  <option value="">Select Travel Package</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="heritage">Heritage Site</option>
+                  <option value="other">Other</option>
+                </select>
+              </div> -->
+              <div class="grid-col-all">
+                <label class="cta-label" for="cta-password">Password</label>
+                <input
+                  class="cta-input"
+                  id="cta-age"
+                  type="password"
+                  placeholder="8+ characters, special characters"
+                />
+              </div>
+            </form>
+            <div class="cta-footer cta-grid grid--col-2">
+              <div class="flex gap--sm grid-col-all">
+                <input class="cta-checkbox" id="cta-checkbox" type="checkbox" />
+                <label for="cta-checkbox"
+                  >By creating an account, you agree to the Terms of
+                  Service.</label
+                >
+              </div>
+              <a href="#" class="btn btn-full btn--md">Create an Account</a>
+              <div class="flex gap--sm grid-col-all">
+                Already have an account?
+                <a href="#" class="inital-link">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <div class="background-cta" role="img" aria-label="enjoying "></div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container grid footer-container">
+        <div class="footer-primary">
+          <p class="footer-title">Ze<span>ron</span> Travels</p>
+          <p class="regular-text">Stay in the know with quarterly updates</p>
+          <div class="flex footer-subs">
+            <input class="footer-input" type="email" placeholder="Your Email" />
+            <a href="#" class="btn btn-full btn--footer">Sign up</a>
+          </div>
+          <p class="footer-header">Connect with us</p>
+          <div class="social-media flex gap--sm">
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-tiktok"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-reddit"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-twitch"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links-wrap">
+          <p class="footer-header">The Project</p>
+          <ul class="footer-links">
+            <li class="footer-link-wrap">
+              <a href="#" class="footer-link">About</a>
+            </li>
+            <li class="footer-link-wrap">
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+            <li class="footer-link-wrap">
+              <a href="#" class="footer-link">Jobs</a>
+            </li>
+            <li class="footer-link-wrap">
+              <a href="#" class="footer-link">Treks</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-links-wrap">
+          <p class="footer-header">Account</p>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <div class="address-col">
+          <p class="footer-header">Contact us</p>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="module"
