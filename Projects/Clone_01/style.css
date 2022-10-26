@@ -110,14 +110,8 @@
 
 .standout {
   background-color: var(--white);
-  padding: 4rem;
-  border-radius: var(--border-radius-medium);
-}
-
-.standout-desc {
-  color: var(--grey-700);
-  font-size: 1.8rem;
-  line-height: 1.5;
+  padding: 4.2rem 3.8rem;
+  border-radius: var(--border-radius-large);
 }
 
 /**************************/
@@ -136,7 +130,7 @@
 }
 
 .standout-feature-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--green-900);
 }
@@ -212,9 +206,9 @@
 }
 
 .story-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.8rem;
 }
 
 .story-img-box {
@@ -424,7 +418,8 @@
   color: var(--grey-800);
 }
 .pricing-features {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: var(--grey-900);
 }
 
 .popular-cart {
