@@ -59,7 +59,7 @@
             </div>
           </ul>
         </nav>
-        <div class="flex gap--ms footer-subs">
+        <div class="flex gap--ms">
           <a href="#" class="btn btn--sm btn-outline">Log in</a>
           <a href="#" class="btn btn--sm btn-full">Sign up</a>
         </div>
@@ -148,7 +148,7 @@
           </h2>
         </div>
         <div class="container grid grid--col-3">
-          <a class="feature-container">
+          <a class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -176,7 +176,7 @@
               ></ion-icon>
             </span>
           </a>
-          <a class="feature-container">
+          <a class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -204,7 +204,7 @@
               ></ion-icon>
             </span>
           </a>
-          <a class="feature-container">
+          <a class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -279,7 +279,7 @@
             </h2>
           </div>
           <div class="testomonials grid grid--col-3">
-            <figure class="testomonial flex--column gap--vsm">
+            <figure class="testomonial flex-column gap--md">
               <div class="rating">
                 <ion-icon
                   name="star"
@@ -317,7 +317,7 @@
                 </div>
               </div>
             </figure>
-            <figure class="testomonial flex--column gap--vsm">
+            <figure class="testomonial flex-column gap--md">
               <div class="rating">
                 <ion-icon
                   name="star"
@@ -355,7 +355,7 @@
                 </div>
               </div>
             </figure>
-            <figure class="testomonial flex--column gap--vsm">
+            <figure class="testomonial flex-column gap--md">
               <div class="rating">
                 <ion-icon
                   name="star"
@@ -479,7 +479,7 @@
           </div>
           <div class="pricing-plan-wrap grid--col-4">
             <div class="pricing-plan">
-              <div class="pricing-header">
+              <div class="flex-column gap--sm">
                 <span class="plan-subheading">Intro</span>
                 <div class="pricing-wrap">
                   <span class="price-tag">&#36;19</span>
@@ -534,7 +534,7 @@
               >
             </div>
             <div class="pricing-plan">
-              <div class="pricing-header">
+              <div class="flex-column gap--sm">
                 <span class="plan-subheading">Base</span>
                 <div class="pricing-wrap">
                   <span class="price-tag">&#36;39</span>
@@ -590,7 +590,7 @@
               >
             </div>
             <div class="pricing-plan popular-cart">
-              <div class="pricing-header">
+              <div class="flex-column gap--sm">
                 <span class="plan-subheading">Popular</span>
                 <div class="pricing-wrap">
                   <span class="price-tag">&#36;99</span>
@@ -645,7 +645,7 @@
               >
             </div>
             <div class="pricing-plan">
-              <div class="pricing-header">
+              <div class="flex-column gap--sm">
                 <span class="plan-subheading">Enterprise</span>
                 <div class="pricing-wrap">
                   <span class="price-tag">&#36;199</span>
@@ -708,7 +708,7 @@
       </section>
       <section class="section-cta">
         <div class="container grid cta-container grid--col-2">
-          <div class="cta-wrap">
+          <div class="flex-column gap--md cta-wrap">
             <div class="cta-header">
               <h3 class="heading-tertiary margin-bottom-sm">Sign up</h3>
               <p class="regular-text">
@@ -773,12 +773,11 @@
               </div>
             </form>
             <div class="cta-footer cta-grid grid--col-2">
-              <div class="flex gap--vsm grid-col-all">
+              <div class="flex gap--ms grid-col-all">
                 <input class="cta-checkbox" id="cta-checkbox" type="checkbox" />
-                <label for="cta-checkbox"
-                  >By creating an account, you agree to the Terms of
-                  Service.</label
-                >
+                <p class="cta-text">
+                  By creating an account, you agree to the Terms of Service.
+                </p>
               </div>
               <a href="#" class="btn btn-full btn--md">Create an Account</a>
               <div class="flex gap--vsm grid-col-all">
@@ -795,12 +794,18 @@
       <div class="container grid footer-container">
         <div class="footer-primary">
           <p class="footer-title">Ze<span>ron</span> Travels</p>
-          <p class="regular-text">Stay in the know with quarterly updates</p>
-          <div class="flex footer-subs">
-            <input class="footer-input" type="email" placeholder="Your Email" />
-            <a href="#" class="btn btn-full btn--footer">Sign up</a>
+          <div class="flex-column">
+            <p class="regular-text">Stay in the know with quarterly updates</p>
+            <div class="flex gap--ms footer-subs">
+              <input
+                class="footer-input"
+                type="email"
+                placeholder="Your Email"
+              />
+              <a href="#" class="btn btn-full btn--footer">Sign up</a>
+            </div>
           </div>
-          <p class="footer-header">Connect with us</p>
+          <p class="footer-text">Connect with us</p>
           <div class="social-media flex gap--vsm">
             <a href="#" class="social-link"
               ><ion-icon name="logo-facebook"></ion-icon
@@ -821,7 +826,7 @@
         </div>
         <div class="footer-links-wrap">
           <p class="footer-header">The Project</p>
-          <ul class="lists footer-links">
+          <ul class="lists">
             <li class="footer-link-wrap">
               <a href="#" class="footer-link">About</a>
             </li>
@@ -838,7 +843,7 @@
         </div>
         <nav class="footer-links-wrap">
           <p class="footer-header">Account</p>
-          <ul class="footer-links">
+          <ul class="lists">
             <li><a class="footer-link" href="#">Create account</a></li>
             <li><a class="footer-link" href="#">Sign in</a></li>
             <li><a class="footer-link" href="#">iOS app</a></li>

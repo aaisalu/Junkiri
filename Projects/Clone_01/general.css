@@ -256,7 +256,7 @@ img {
   align-items: center;
 }
 
-.flex--column {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
