@@ -141,6 +141,7 @@
   padding: 2.4rem;
   background-color: var(--white);
   height: 42.8rem;
+  box-shadow: 0 18px 18px rgba(0, 0, 0, 0.0401);
 }
 
 .feature-quote-icon {
@@ -203,6 +204,7 @@
   background-color: var(--white);
   grid-template-columns: 0.8fr 1fr;
   border-radius: var(--border-radius-large);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.05);
 }
 
 .story-text {
@@ -253,7 +255,7 @@
 
 .testomonial {
   padding: 4.8rem;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.101);
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.0501);
   border-bottom: 4px solid var(--green-800);
   background-color: var(--white);
   border-radius: var(--border-radius-medium);
@@ -277,6 +279,7 @@
 
 .colorized-background {
   position: absolute;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.0501);
   background-color: var(--green-800);
   width: 85%;
   height: 70%;
@@ -286,7 +289,7 @@
   bottom: 0;
   z-index: -1;
   margin: 0 auto;
-  border-radius: var(--border-radius-medium);
+  border-radius: var(--border-radius-large);
 }
 
 .testomonial-img {
@@ -425,6 +428,7 @@
 .popular-cart {
   background-color: var(--green-300);
   border-radius: var(--border-radius-medium);
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.015);
 }
 
 .toggle-container {
@@ -437,14 +441,16 @@ input[type="checkbox"].togglebtn {
 }
 
 input[type="checkbox"].togglebtn + label.checkbox {
-  width: 12rem;
-  height: 2.8rem;
+  width: 16rem;
+  height: 3.81rem;
   background-color: var(--green-100);
   display: block;
   position: relative;
   border-radius: 1.8rem;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: 500;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.0095);
 }
 
 input[type="checkbox"].togglebtn + label.checkbox::after {
@@ -453,31 +459,31 @@ input[type="checkbox"].togglebtn + label.checkbox::after {
   justify-content: center;
   align-items: center;
   background-color: var(--green-700);
-  width: 6rem;
-  height: 2.48rem;
+  width: 8rem;
+  height: 2.6rem;
   /* height: 2.38rem; */
   border-radius: 1.8rem;
-  padding: 1.2rem 0;
+  padding: 1.65rem 0;
   position: absolute;
   top: 6%;
-  left: 2%;
+  left: 1.8%;
   transition: all 0.2s ease-in-out;
 }
 
 input[type="checkbox"].togglebtn + label.checkbox::before {
   content: attr(plan_month);
   position: absolute;
-  left: 75px;
-  top: 8.9px;
+  left: 65%;
+  top: 34.5%;
   color: var(--green-800);
 }
 
 input[type="checkbox"].togglebtn:checked + label.checkbox::before {
   content: attr(plan_year);
-  left: 20px;
+  left: 15%;
 }
 input[type="checkbox"].togglebtn:checked + label.checkbox::after {
-  left: 48%;
+  left: 48.8%;
   content: attr(plan_month);
 }
 
@@ -500,6 +506,7 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
   background-color: var(--white);
   border-radius: var(--border-radius-large);
   grid-template-columns: 1fr 0.9fr;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.017);
 }
 
 .background-cta {
@@ -510,7 +517,7 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
 
 .cta-wrap {
   border-radius: var(--border-radius-large);
-  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.06);
   padding: 3.4rem 3.8rem;
 }
 .cta-grid {
