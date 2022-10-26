@@ -99,6 +99,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/**************************/
+/* links group */
+/**************************/
+
 .link:visited,
 .link:link {
   font-size: 1.6rem;
@@ -107,6 +112,10 @@ img {
   display: inline-block;
   color: var(--green-900);
 }
+
+/**************************/
+/* Icon group */
+/**************************/
 
 .icon-sm {
   width: 1.6rem;
@@ -119,17 +128,9 @@ img {
   color: var(--green-900);
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.gap--sm {
-  gap: 1.8rem;
-}
-.gap--md {
-  gap: 2.8rem;
-}
+/**************************/
+/* btn group */
+/**************************/
 
 .btn:link,
 .btn:visited {
@@ -162,6 +163,11 @@ img {
 .btn-full:active {
   background-color: var(--green-800);
 }
+
+/**************************/
+/* heading group */
+/**************************/
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -183,12 +189,18 @@ img {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
 }
+/**************************/
+/* margin group*/
+/**************************/
+
 .margin-bottom-sm {
   margin-bottom: 1.8rem !important;
 }
 .margin-right-lr {
   margin-bottom: 2.4rem !important;
 }
+
+/* Arrow group */
 .right-arrow-move::after {
   display: inline-block;
   padding-left: 8px;
@@ -199,6 +211,10 @@ img {
 .right-arrow-move:hover::after {
   transform: translateX(4px);
 }
+/**************************/
+/* btn shadow group */
+/**************************/
+
 .btn-shadow-group {
   border-radius: var(--border-radius-medium);
   display: inline-block;
@@ -208,7 +224,7 @@ img {
   top: -4.5px;
   right: -4.5px;
 }
-
+/* color pallate */
 .outline--green {
   border: 2px solid var(--green-900);
 }
@@ -219,15 +235,28 @@ img {
 .outline--grey {
   border: 2px solid var(--grey-200);
 }
+/**************************/
+/* Flex group */
+/**************************/
 
-.container {
-  max-width: var(--maximum-content-width);
-  margin: 0 auto;
-  padding: 0 3.2rem;
+.flex {
+  display: flex;
+  align-items: center;
 }
-.text-center {
-  text-align: center;
+/**************************/
+/* Gap group */
+/**************************/
+
+.gap--sm {
+  gap: 1.8rem;
 }
+.gap--md {
+  gap: 2.8rem;
+}
+/**************************/
+/* Grid group */
+/**************************/
+
 .grid {
   display: grid;
   column-gap: 6.8rem;
@@ -256,6 +285,19 @@ img {
 }
 .grid-col-all {
   grid-column: 1/-1;
+}
+/**************************/
+/* misc styles */
+/**************************/
+
+.container {
+  max-width: var(--maximum-content-width);
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 .subheading {
   display: inline-block;
