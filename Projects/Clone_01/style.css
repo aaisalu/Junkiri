@@ -1,10 +1,13 @@
-.header {
-  border-bottom: 0.1px solid var(--brand-grey);
-}
-
 .header,
 .section-hero {
   background-color: var(--brand-main);
+}
+/**************************/
+/* header group */
+/**************************/
+
+.header {
+  border-bottom: 0.1px solid var(--brand-grey);
 }
 .header-wrap {
   max-width: 138rem;
@@ -35,6 +38,11 @@
 .footer-title span {
   color: #019267;
 }
+
+/**************************/
+/* hero group */
+/**************************/
+
 .section-hero {
   padding: 4.8rem 0 9.8rem 0;
 }
@@ -96,6 +104,10 @@
   left: 0;
 }
 
+/**************************/
+/* Standout section */
+/**************************/
+
 .section-standout {
   background-color: var(--grey-100);
   padding: 4.8rem 0;
@@ -113,6 +125,14 @@
   line-height: 1.5;
 }
 
+/**************************/
+/* Feature section */
+/**************************/
+
+.section-feature {
+  padding: 9.6rem 0;
+}
+
 .standout-feature {
   background-color: var(--green-100);
   gap: 1.2rem;
@@ -124,14 +144,6 @@
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--green-900);
-}
-
-.section-testomonial {
-  padding: 4.8rem 0 3.2rem;
-}
-
-.section-feature {
-  padding: 9.6rem 0;
 }
 
 .feature-container {
@@ -187,6 +199,10 @@
   opacity: 1;
 }
 
+/**************************/
+/* Story section */
+/**************************/
+
 .section-story {
   padding: 9.6rem 0;
   background-color: var(--grey-100);
@@ -232,6 +248,10 @@
 .story-imgs:hover .story-img {
   transform: scale(1.1);
 }
+
+/**************************/
+/* Testomonial section */
+/**************************/
 
 .section-testomonials {
   padding: 9.6rem 0;
@@ -292,6 +312,10 @@
   border-radius: 50px;
 }
 
+/**************************/
+/* Illustration section */
+/**************************/
+
 .section-illustration {
   background-color: var(--green-800);
   padding: 9.6rem 0;
@@ -351,6 +375,10 @@
 .illustration-gallery:hover .illustration-gallery-img {
   transform: scale(0.92);
 }
+
+/**************************/
+/* Pricing section */
+/**************************/
 
 .section-pricing {
   padding: 9.6rem 0;
@@ -493,6 +521,10 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
   box-shadow: 0 0 0 0.3rem rgba(21, 238, 173, 0.403);
 }
 
+/**************************/
+/* CTA section */
+/**************************/
+
 .section-cta {
   background-color: var(--green-800);
   padding: 9.6rem 0;
@@ -558,11 +590,9 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
   font-weight: 500;
 }
 
-.inital-link {
-  text-decoration: none;
-  color: #536dfe;
-  font-weight: 600;
-}
+/**************************/
+/* Footer section */
+/**************************/
 
 .footer-container {
   grid-template-columns: 2fr 1fr 1fr 1fr;

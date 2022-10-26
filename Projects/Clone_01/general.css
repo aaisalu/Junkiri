@@ -329,6 +329,13 @@ img {
   list-style: none;
   gap: 2.4rem;
 }
+
+.inital-link {
+  text-decoration: none;
+  color: #536dfe;
+  font-weight: 600;
+}
+
 *:focus {
   outline: none;
   box-shadow: 0 0 0 0.5rem rgba(21, 238, 173, 0.403);
