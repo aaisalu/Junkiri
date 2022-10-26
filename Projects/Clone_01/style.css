@@ -146,8 +146,6 @@
   border-radius: var(--border-radius-medium);
   padding: 2.4rem;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   height: 42.8rem;
 }
 
@@ -261,9 +259,6 @@
 
 .testomonial {
   padding: 4.8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.101);
   border-bottom: 4px solid var(--green-800);
   background-color: var(--white);
@@ -414,11 +409,6 @@
   color: var(--green-900);
   font-weight: 500;
 }
-.pricing-wrap {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
 
 .price-tag {
   font-weight: 600;
@@ -436,12 +426,8 @@
   line-height: 1.2;
   color: var(--grey-800);
 }
-
-.pricing-feature {
-  display: flex;
-  gap: 8px;
+.pricing-features {
   font-size: 1.6rem;
-  align-items: center;
 }
 
 .popular-cart {
@@ -597,7 +583,6 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
   font-weight: 700;
 }
 .footer-subs {
-  gap: 8px;
   margin: 1.2rem 0 4.8rem;
 }
 .footer-input {
