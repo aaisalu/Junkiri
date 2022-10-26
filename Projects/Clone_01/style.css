@@ -24,11 +24,6 @@
   display: flex;
   gap: 2.4rem;
 }
-.header-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
 .header-logo .link.header-logo-link {
   font-weight: 600;
@@ -141,7 +136,7 @@
 }
 
 .standout-feature-text {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: var(--green-900);
 }
@@ -305,9 +300,6 @@
   border-radius: var(--border-radius-medium);
 }
 
-.rating .icon-md {
-  color: var(--green-800);
-}
 .testomonial-img {
   border-radius: 50px;
 }
@@ -452,13 +444,8 @@
   align-items: center;
 }
 
-.pricing-feature .icon-sm {
-  color: var(--grey-400);
-}
-
 .popular-cart {
   background-color: var(--green-300);
-
   border-radius: var(--border-radius-medium);
 }
 
@@ -650,14 +637,6 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
   font-weight: 600;
   color: var(--grey-700);
   margin-bottom: 3.8rem;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  font-size: 1.8rem;
-  list-style: none;
 }
 
 .footer-link {

@@ -120,12 +120,10 @@ img {
 .icon-sm {
   width: 1.6rem;
   height: 1.6rem;
-  color: var(--green-900);
 }
 .icon-md {
   width: 2.4rem;
   height: 2.4rem;
-  color: var(--green-900);
 }
 
 /**************************/
@@ -199,8 +197,10 @@ img {
 .margin-right-lr {
   margin-bottom: 2.4rem !important;
 }
-
+/**************************/
 /* Arrow group */
+/**************************/
+
 .right-arrow-move::after {
   display: inline-block;
   padding-left: 8px;
@@ -224,16 +224,28 @@ img {
   top: -4.5px;
   right: -4.5px;
 }
+
+/**************************/
 /* color pallate */
+/**************************/
+
 .outline--green {
   border: 2px solid var(--green-900);
 }
-
 .outline--white {
   border: 2px solid var(--white);
 }
 .outline--grey {
   border: 2px solid var(--grey-200);
+}
+.primary-color {
+  color: var(--green-900);
+}
+.secondary-color {
+  color: var(--green-800);
+}
+.grey-color {
+  color: var(--grey-400);
 }
 /**************************/
 /* Flex group */
@@ -243,16 +255,27 @@ img {
   display: flex;
   align-items: center;
 }
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
 /**************************/
 /* Gap group */
 /**************************/
-
-.gap--sm {
+.gap--ms {
+  gap: 8px;
+}
+.gap--vsm {
   gap: 1.8rem;
 }
-.gap--md {
+.gap--sm {
   gap: 2.8rem;
 }
+.gap--md {
+  gap: 3.8rem;
+}
+
 /**************************/
 /* Grid group */
 /**************************/
@@ -296,9 +319,6 @@ img {
   padding: 0 3.2rem;
 }
 
-.text-center {
-  text-align: center;
-}
 .subheading {
   display: inline-block;
   background-color: var(--green-100);
@@ -310,16 +330,16 @@ img {
   margin-bottom: 1.6rem;
   font-weight: 500;
 }
-.feature-text,
-.testomonial-text,
-.pricing-tax,
+
 .regular-text {
-  line-height: 1.5;
+  line-height: 1.3;
   font-weight: 500;
   font-size: 1.6rem;
-  color: var(--grey-700);
+  color: var(--grey-800);
 }
-
+.text-center {
+  text-align: center;
+}
 .invert-color {
   color: var(--white) !important;
 }
