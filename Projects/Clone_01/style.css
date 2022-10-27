@@ -462,10 +462,14 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
 .feature-container {
   border: 1px solid var(--grey-200);
   border-radius: var(--border-radius-large);
-  padding: 2.4rem;
+  padding: 3.8rem 2.2rem 4.2rem 3.8rem;
   background-color: var(--white);
-  height: 42.8rem;
   box-shadow: 0 18px 18px rgba(0, 0, 0, 0.0401);
+}
+.feature-logo {
+  height: 4.2rem;
+  display: block;
+  margin-top: 3.8rem;
 }
 
 .feature-quote-icon {
@@ -482,16 +486,11 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
 }
 
 .feature-quote {
-  margin-bottom: 3.2rem;
-}
-.feature-logo {
-  height: 4.2rem;
-  display: block;
-  margin-top: 3.2rem;
+  margin-bottom: 4.2rem;
 }
 
 .feature-footer {
-  margin-top: auto;
+  margin-top: 6.2rem;
   display: flex;
   justify-content: end;
 }
