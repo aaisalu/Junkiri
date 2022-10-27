@@ -98,32 +98,46 @@
   top: -2.5rem;
   left: 0;
 }
+/**************************/
+/* featured section */
+/**************************/
+.section-featured {
+  padding: 4.8rem 0;
+}
 
+.heading-featured-in {
+  font-size: 1.4rem;
+  margin-bottom: 3.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  color: var(--grey-600);
+  font-weight: 500;
+}
+.logos {
+  justify-content: space-around;
+}
+
+.featured-logo {
+  height: 3.4rem;
+  filter: brightness(0);
+  opacity: 30%;
+}
 /**************************/
 /* Standout section */
 /**************************/
 
 .section-standout {
-  background-color: var(--grey-100);
-  padding: 4.8rem 0;
+  padding: 4.2rem 0 9.6rem;
 }
 
 .standout {
-  background-color: var(--white);
+  background-color: var(--green-100);
   padding: 4.2rem 3.8rem;
   border-radius: var(--border-radius-large);
 }
-
-/**************************/
-/* Feature section */
-/**************************/
-
-.section-feature {
-  padding: 9.6rem 0;
-}
-
 .standout-feature {
-  background-color: var(--green-100);
+  background-color: var(--green-200);
   gap: 1.2rem;
   padding: 8px 16px;
   border-radius: var(--border-radius-large);
@@ -135,65 +149,13 @@
   color: var(--green-900);
 }
 
-.feature-container {
-  border: 1px solid var(--grey-200);
-  border-radius: var(--border-radius-medium);
-  padding: 2.4rem;
-  background-color: var(--white);
-  height: 42.8rem;
-  box-shadow: 0 18px 18px rgba(0, 0, 0, 0.0401);
-}
-
-.feature-quote-icon {
-  background-color: var(--blue-100);
-  display: inline-block;
-  border-radius: var(--border-radius-full);
-  padding: 4px;
-}
-.icon-quote {
-  width: 3.8rem;
-  height: 3.8rem;
-  filter: invert(35%) sepia(12%) saturate(6125%) hue-rotate(125deg)
-    brightness(97%) contrast(91%);
-}
-
-.feature-quote {
-  margin-bottom: 3.2rem;
-}
-.feature-logo {
-  height: 4.2rem;
-  display: block;
-  margin-top: 3.2rem;
-}
-
-.feature-footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: end;
-}
-.feature-footer::before {
-  content: "Read more";
-  display: inline-block;
-  opacity: 0;
-  color: var(--green-900);
-  font-size: 1.4rem;
-  font-weight: 500;
-  align-self: center;
-  margin-right: 8px;
-  transition: all 0.3s;
-}
-
-.feature-container:hover .feature-footer::before {
-  opacity: 1;
-}
-
 /**************************/
 /* Story section */
 /**************************/
 
 .section-story {
-  padding: 9.6rem 0;
-  background-color: var(--grey-100);
+  padding: 4.8rem 0 9.6rem;
+  background-color: var(--grey-50);
 }
 
 .section-story-wrap {
@@ -243,7 +205,7 @@
 /**************************/
 
 .section-testomonials {
-  padding: 9.6rem 0;
+  padding: 7.8rem 0 9.6rem;
 }
 .testomonials-container {
   padding: 8rem 0;
@@ -388,9 +350,7 @@
 }
 .pricing-plan {
   padding: 3.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
+  border-radius: var(--border-radius-medium);
 }
 .pricing-header {
   display: flex;
@@ -427,7 +387,6 @@
 
 .popular-cart {
   background-color: var(--green-300);
-  border-radius: var(--border-radius-medium);
   box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.015);
 }
 
@@ -490,6 +449,66 @@ input[type="checkbox"].togglebtn:checked + label.checkbox::after {
 input[type="checkbox"].togglebtn:focus + label.checkbox {
   outline: none;
   box-shadow: 0 0 0 0.3rem rgba(21, 238, 173, 0.403);
+}
+
+/**************************/
+/* Feature section */
+/**************************/
+
+.section-feature {
+  padding: 9.6rem 0;
+}
+
+.feature-container {
+  border: 1px solid var(--grey-200);
+  border-radius: var(--border-radius-medium);
+  padding: 2.4rem;
+  background-color: var(--white);
+  height: 42.8rem;
+  box-shadow: 0 18px 18px rgba(0, 0, 0, 0.0401);
+}
+
+.feature-quote-icon {
+  background-color: var(--blue-100);
+  display: inline-block;
+  border-radius: var(--border-radius-full);
+  padding: 4px;
+}
+.icon-quote {
+  width: 3.8rem;
+  height: 3.8rem;
+  filter: invert(35%) sepia(12%) saturate(6125%) hue-rotate(125deg)
+    brightness(97%) contrast(91%);
+}
+
+.feature-quote {
+  margin-bottom: 3.2rem;
+}
+.feature-logo {
+  height: 4.2rem;
+  display: block;
+  margin-top: 3.2rem;
+}
+
+.feature-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: end;
+}
+.feature-footer::before {
+  content: "Read more";
+  display: inline-block;
+  opacity: 0;
+  color: var(--green-900);
+  font-size: 1.4rem;
+  font-weight: 500;
+  align-self: center;
+  margin-right: 8px;
+  transition: all 0.3s;
+}
+
+.feature-container:hover .feature-footer::before {
+  opacity: 1;
 }
 
 /**************************/
