@@ -389,8 +389,8 @@ img {
   box-shadow: 0 0 0 0.5rem rgba(21, 238, 173, 0.403);
 }
 
-*::placeholder {
-  font-size: 1.4rem;
+input::placeholder {
+  font-size: 1.6rem;
   font-family: inherit;
   color: var(--grey-400);
 }
