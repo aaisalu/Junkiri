@@ -169,6 +169,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: all 0.5s ease-in;
   }
   .header-btn {
     position: absolute;
@@ -182,6 +183,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: all 0.5s ease-in;
   }
 
   .nav-toggle .header-nav-links,
@@ -252,7 +254,9 @@
     grid-template-columns: 1fr;
     padding: 4.8rem;
   }
-
+  .story-img {
+    object-position: center center;
+  }
   .featured-logo {
     height: 2.4rem;
   }
