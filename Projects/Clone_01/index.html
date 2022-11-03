@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./general.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./queries.css" />
-    <title>Document</title>
+    <script defer src="./js/script.js"></script>
+
+    <title>Zeron Travel</title>
   </head>
   <body>
     <header class="header">
@@ -21,50 +23,51 @@
         <div class="header-logo">
           <a href="#" class="header-logo-link link">Ze<span>ron</span></a>
         </div>
-        <nav class="header-nav-links">
-          <ul class="header-nav-lists">
-            <div class="flex gap--ms">
-              <a href="#" class="header-nav-link link">Home</a>
-              <ion-icon
-                class="icon-sm primary-color"
-                name="chevron-down-outline"
-              ></ion-icon>
-            </div>
-            <div class="flex gap--ms">
-              <a href="#" class="header-nav-link link">Resources </a>
-              <ion-icon
-                class="icon-sm primary-color"
-                name="chevron-down-outline"
-              ></ion-icon>
-            </div>
-            <div class="flex gap--ms">
-              <a href="#" class="header-nav-link link">Developers </a>
-              <ion-icon
-                class="icon-sm primary-color"
-                name="chevron-down-outline"
-              ></ion-icon>
-            </div>
-            <div class="flex gap--ms">
-              <a href="#" class="header-nav-link link">FAQ</a>
-              <ion-icon
-                class="icon-sm primary-color"
-                name="chevron-down-outline"
-              ></ion-icon>
-            </div>
-            <div class="flex gap--ms">
-              <a href="#" class="header-nav-link link">Company</a>
-              <ion-icon
-                class="icon-sm primary-color"
-                name="chevron-down-outline"
-              ></ion-icon>
-            </div>
-          </ul>
-        </nav>
-        <div class="flex gap--ms header-btn">
-          <a href="#" class="btn btn--sm btn-outline">Log in</a>
-          <a href="#" class="btn btn--sm btn-full">Sign up</a>
+        <div class="header-nav-wrap">
+          <nav class="header-nav-links">
+            <ul class="header-nav-lists">
+              <div class="flex gap--ms">
+                <a href="#home" class="header-nav-link link">Home</a>
+                <ion-icon
+                  class="icon-sm primary-color"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <div class="flex gap--ms">
+                <a href="#resources" class="header-nav-link link">Resources </a>
+                <ion-icon
+                  class="icon-sm primary-color"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <div class="flex gap--ms">
+                <a href="#gallery" class="header-nav-link link">Gallery </a>
+                <ion-icon
+                  class="icon-sm primary-color"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <div class="flex gap--ms">
+                <a href="#partners" class="header-nav-link link">Partners</a>
+                <ion-icon
+                  class="icon-sm primary-color"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <div class="flex gap--ms">
+                <a href="#company" class="header-nav-link link">Company</a>
+                <ion-icon
+                  class="icon-sm primary-color"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+            </ul>
+          </nav>
+          <div class="flex gap--ms header-btn">
+            <a href="#" class="btn btn--sm btn-outline">Log in</a>
+            <a href="#cta" class="btn btn--sm btn-full">Sign up</a>
+          </div>
         </div>
-
         <button class="nav-menu">
           <ion-icon name="menu-outline" class="icon-lr"></ion-icon>
           <ion-icon name="close-outline" class="icon-lr"></ion-icon>
@@ -72,7 +75,7 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="home">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">Travel with ease without the wings</h1>
@@ -85,14 +88,14 @@
             <div class="flex gap--sm hero-btn">
               <div class="btn-shadow-group outline--green">
                 <a
-                  href="#"
+                  href="#cta"
                   class="btn btn--lr btn-full right-arrow-move btn-shadow"
                   >Try for Free
                 </a>
               </div>
               <div class="btn-shadow-group outline--white">
                 <a
-                  href="#"
+                  href="#pricing"
                   class="btn btn--lr btn-outline right-arrow-move btn-shadow"
                   >See Pricing
                 </a>
@@ -104,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section class="section-featured">
+      <section class="section-featured" id="partners">
         <div class="container">
           <h2 class="heading-featured-in text-center">As featured in</h2>
           <div class="logos flex">
@@ -175,7 +178,7 @@
           </div>
         </div>
       </section>
-      <section class="section-story">
+      <section class="section-story" id="gallery">
         <div class="container section-story-wrap">
           <div class="text-center">
             <span class="subheading">Feature it</span>
@@ -201,16 +204,32 @@
             </div>
             <div class="story-img-box grid--col-2">
               <figure class="story-imgs">
-                <img src="../../gallery/temple.jpg" class="story-img" />
+                <img
+                  alt="story-images"
+                  src="../../gallery/temple.jpg"
+                  class="story-img"
+                />
               </figure>
               <figure class="story-imgs">
-                <img src="../../gallery/westpra.jpg" class="story-img" />
+                <img
+                  alt="story-images"
+                  src="../../gallery/westpra.jpg"
+                  class="story-img"
+                />
               </figure>
               <figure class="story-imgs">
-                <img src="../../gallery/forest.jpg" class="story-img" />
+                <img
+                  alt="story-images"
+                  src="../../gallery/forest.jpg"
+                  class="story-img"
+                />
               </figure>
               <figure class="story-imgs">
-                <img src="../../gallery/canel.jpg" class="story-img" />
+                <img
+                  alt="story-images"
+                  src="../../gallery/canel.jpg"
+                  class="story-img"
+                />
               </figure>
             </div>
           </div>
@@ -256,6 +275,7 @@
                 <img
                   src="../../gallery/customers/16.jpg"
                   class="testomonial-img"
+                  alt="testomonial author image"
                 />
                 <div class="author-info">
                   <p class="author-name">Mike Kie</p>
@@ -292,6 +312,7 @@
               </p>
               <div class="testomonial-author flex gap--vsm">
                 <img
+                  alt="testomonial author image"
                   src="../../gallery/customers/61.jpg"
                   class="testomonial-img"
                 />
@@ -330,6 +351,7 @@
               </p>
               <div class="testomonial-author flex gap--vsm">
                 <img
+                  alt="testomonial author image"
                   src="../../gallery/customers/44.jpg"
                   class="testomonial-img"
                 />
@@ -347,11 +369,12 @@
           ></div>
         </div>
       </section>
-      <section class="section-illustration">
+      <section class="section-illustration" id="resources">
         <div class="container illustartion-galleries">
           <figure class="illustration-gallery arrange-primary">
             <img
               src="../../gallery/Illustration/blooming.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
@@ -364,48 +387,55 @@
           <figure class="illustration-gallery arrange-zero">
             <img
               src="../../gallery/Illustration/trip.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-one">
             <img
               src="../../gallery/Illustration/relaxation.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-two">
             <img
               src="../../gallery/Illustration/sharing_knowledge.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-three">
             <img
               src="../../gallery/Illustration/good_team.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-four">
             <img
               src="../../gallery/Illustration/mindfulness.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-five">
             <img
               src="../../gallery/Illustration/happy_news.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
           <figure class="illustration-gallery arrange-six">
             <img
               src="../../gallery/Illustration/compose_music.svg"
+              alt="illustation images"
               class="illustration-gallery-img"
             />
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container pricing-container">
           <div class="pricing-header-wrap">
             <div class="pricing-heading">
@@ -652,7 +682,7 @@
           </p>
         </div>
       </section>
-      <section class="section-feature">
+      <section class="section-feature" id="company">
         <div class="container">
           <span class="subheading">Be Adventurous</span>
           <h2 class="heading-secondary">
@@ -746,7 +776,7 @@
           </a>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container grid cta-container grid--col-2">
           <div class="flex-column gap--md cta-wrap">
             <div class="cta-header">
@@ -844,7 +874,7 @@
                 type="email"
                 placeholder="Your Email"
               />
-              <a href="#" class="btn btn-full btn--footer">Sign up</a>
+              <a href="#cta" class="btn btn-full btn--footer">Sign up</a>
             </div>
           </div>
           <p class="footer-text">Connect with us</p>
