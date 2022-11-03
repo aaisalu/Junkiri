@@ -88,12 +88,14 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   color: var(--grey-800);
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -195,15 +197,18 @@ img {
 .heading-primary {
   font-size: 7.2rem;
   margin-bottom: 3.8rem;
+  line-height: 1.05;
 }
 
 .heading-secondary {
   font-size: 4.8rem;
   margin-bottom: 6.2rem;
+  line-height: 1.2;
 }
 .heading-tertiary {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
+  line-height: 1.2;
 }
 /**************************/
 /* margin group*/
@@ -382,6 +387,7 @@ img {
   flex-direction: column;
   list-style: none;
   gap: 2.4rem;
+  line-height: 1.2;
 }
 
 *:focus {

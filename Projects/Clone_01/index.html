@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./general.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
     <title>Document</title>
   </head>
   <body>
@@ -59,10 +60,15 @@
             </div>
           </ul>
         </nav>
-        <div class="flex gap--ms">
+        <div class="flex gap--ms header-btn">
           <a href="#" class="btn btn--sm btn-outline">Log in</a>
           <a href="#" class="btn btn--sm btn-full">Sign up</a>
         </div>
+
+        <button class="nav-menu">
+          <ion-icon name="menu-outline" class="icon-lr"></ion-icon>
+          <ion-icon name="close-outline" class="icon-lr"></ion-icon>
+        </button>
       </div>
     </header>
     <main>
@@ -76,7 +82,7 @@
               perspiciatis! Expedita commodi dolore quibusdam illum facere
               laboriosam iste reiciendis. Nostrum, quo rom.
             </p>
-            <div class="flex gap--sm">
+            <div class="flex gap--sm hero-btn">
               <div class="btn-shadow-group outline--green">
                 <a
                   href="#"
@@ -133,8 +139,8 @@
       </section>
       <section class="section-standout">
         <div class="standout container grid grid--col-2">
-          <h3 class="heading-tertiary self-center-v">
-            Bon Voyage and get there safe!
+          <h3 class="heading-tertiary self-center-v text-center">
+            Wherever you go, go with all your heart !
           </h3>
           <p class="highlighted-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
@@ -142,7 +148,9 @@
             alias magnam et nisi placeat veritatis deleniti quisquam
             reprehenderit
           </p>
-          <div class="grid-col-all flex gap--sm self-center-h">
+          <div
+            class="grid-col-all flex gap--sm self-center-h standout-feature-heading"
+          >
             <span class="standout-feature flex">
               <ion-icon
                 name="checkmark-outline"
@@ -415,7 +423,7 @@
               ></label>
             </div>
           </div>
-          <div class="pricing-plan-wrap grid--col-4">
+          <div class="pricing-plan-wrap">
             <div class="pricing-plan flex-column gap--md">
               <div class="flex-column gap--vsm">
                 <span class="plan-subheading">Intro</span>
@@ -651,7 +659,7 @@
             Take only memories, leave only footprints.
           </h2>
         </div>
-        <div class="container grid grid--col-3">
+        <div class="container feature-grid grid grid--col-3">
           <a class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
@@ -749,11 +757,11 @@
             </div>
             <div class="cta-btn-wrap cta-grid grid--col-2">
               <a href="#" class="btn-outline btn--cta flex">
-                <ion-icon name="logo-google" class="icon-md"></ion-icon
+                <ion-icon name="logo-google" class="icon-lr"></ion-icon
                 ><span>Sign up with Google</span></a
               >
               <a href="#" class="btn-outline btn--cta flex">
-                <ion-icon name="logo-facebook" class="icon-md"></ion-icon
+                <ion-icon name="logo-facebook" class="icon-lr"></ion-icon
                 ><span>Sign up with Facebook</span>
               </a>
             </div>
