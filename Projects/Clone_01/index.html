@@ -26,41 +26,41 @@
         <div class="header-nav-wrap">
           <nav class="header-nav-links">
             <ul class="header-nav-lists">
-              <div class="flex gap--ms">
+              <li class="flex gap--ms">
                 <a href="#home" class="header-nav-link link">Home</a>
                 <ion-icon
                   class="icon-sm primary-color"
                   name="chevron-down-outline"
                 ></ion-icon>
-              </div>
-              <div class="flex gap--ms">
+              </li>
+              <li class="flex gap--ms">
                 <a href="#resources" class="header-nav-link link">Resources </a>
                 <ion-icon
                   class="icon-sm primary-color"
                   name="chevron-down-outline"
                 ></ion-icon>
-              </div>
-              <div class="flex gap--ms">
+              </li>
+              <li class="flex gap--ms">
                 <a href="#gallery" class="header-nav-link link">Gallery </a>
                 <ion-icon
                   class="icon-sm primary-color"
                   name="chevron-down-outline"
                 ></ion-icon>
-              </div>
-              <div class="flex gap--ms">
+              </li>
+              <li class="flex gap--ms">
                 <a href="#partners" class="header-nav-link link">Partners</a>
                 <ion-icon
                   class="icon-sm primary-color"
                   name="chevron-down-outline"
                 ></ion-icon>
-              </div>
-              <div class="flex gap--ms">
+              </li>
+              <li class="flex gap--ms">
                 <a href="#company" class="header-nav-link link">Company</a>
                 <ion-icon
                   class="icon-sm primary-color"
                   name="chevron-down-outline"
                 ></ion-icon>
-              </div>
+              </li>
             </ul>
           </nav>
           <div class="flex gap--ms header-btn">
@@ -450,6 +450,7 @@
                 plan_month="Month "
                 for="toggle"
                 class="checkbox"
+                aria-label="toggle between month and year"
               ></label>
             </div>
           </div>
@@ -690,7 +691,7 @@
           </h2>
         </div>
         <div class="container feature-grid grid grid--col-3">
-          <a class="feature-container flex-column">
+          <div class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -717,8 +718,8 @@
                 class="icon-lr primary-color"
               ></ion-icon>
             </span>
-          </a>
-          <a class="feature-container flex-column">
+          </div>
+          <div class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -745,8 +746,8 @@
                 class="icon-lr primary-color"
               ></ion-icon>
             </span>
-          </a>
-          <a class="feature-container flex-column">
+          </div>
+          <div class="feature-container flex-column">
             <div class="feature-gallery">
               <div class="feature-quote">
                 <div class="feature-quote-icon">
@@ -773,7 +774,7 @@
                 class="icon-lr primary-color"
               ></ion-icon>
             </span>
-          </a>
+          </div>
         </div>
       </section>
       <section class="section-cta" id="cta">
@@ -845,9 +846,9 @@
             <div class="cta-footer cta-grid grid--col-2">
               <div class="flex gap--ms grid-col-all">
                 <input class="cta-checkbox" id="cta-checkbox" type="checkbox" />
-                <p class="cta-text">
+                <label for="cta-checkbox" class="cta-text">
                   By creating an account, you agree to the Terms of Service.
-                </p>
+                </label>
               </div>
               <a href="#" class="btn btn-full btn--md text-center"
                 >Create an Account</a
