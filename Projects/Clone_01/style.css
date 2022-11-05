@@ -32,7 +32,7 @@
 }
 .header-logo-link span,
 .footer-title span {
-  color: #019267;
+  color: #306444;
 }
 .nav-menu {
   display: none;
@@ -260,7 +260,10 @@
 .colorized-background {
   position: absolute;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.0501);
-  background-color: var(--green-800);
+  /* background-color: #31694e; */
+  /* background-color: #146551; */
+  background-color: #038c73;
+
   width: 85%;
   height: 70%;
   top: 0;
@@ -281,7 +284,15 @@
 /**************************/
 
 .section-illustration {
-  background-color: var(--green-800);
+  /* background-color: #189b5f; */
+  /* background-color: #14a36d; */
+  /* background-color: #108256; */
+  /* background-color: #0e754d; */
+  /* background-color: #008c72; */
+  /* background-color: #02735e; */
+  /* background-color: #007369; */
+  /* background-color: #008c72; */
+  background-color: #1f8c64;
   padding: 9.6rem 0;
 }
 
@@ -390,7 +401,7 @@
 
 .pricing-timimg {
   color: var(--grey-600);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .pricing-desc {
@@ -404,7 +415,8 @@
 }
 
 .popular-cart {
-  background-color: var(--green-300);
+  background-color: var(--green-100);
+
   box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.015);
 }
 
@@ -533,7 +545,7 @@ input[type="checkbox"].togglebtn:focus + label.checkbox {
 /**************************/
 
 .section-cta {
-  background-color: var(--green-800);
+  background-color: #008c72;
   padding: 9.6rem 0;
 }
 
