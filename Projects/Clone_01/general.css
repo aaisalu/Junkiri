@@ -274,6 +274,23 @@ img {
 .invert-color {
   color: var(--white) !important;
 }
+
+.highlight-it {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(64%, transparent),
+    color-stop(0, var(--brand-grey)),
+    to(var(--brand-grey))
+  );
+  background-image: linear-gradient(
+    180deg,
+    transparent 70%,
+    var(--brand-grey) 0,
+    var(--brand-grey)
+  );
+}
 /**************************/
 /* Flex group */
 /**************************/
