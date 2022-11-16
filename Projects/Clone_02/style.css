@@ -21,11 +21,7 @@
   gap: 4.8rem;
   align-items: center;
 }
-.header-btn-wrap {
-  display: flex;
-  gap: 1.4rem;
-  align-items: center;
-}
+
 .link.header-logo-wrap {
   font-size: 2rem;
   font-weight: 500;
@@ -63,11 +59,6 @@
   margin-bottom: 4.8rem;
   line-height: 1.7;
   color: var(--grey);
-}
-
-.hero-btn-wrap {
-  display: flex;
-  gap: 1.4rem;
 }
 
 .hero-subheading {
