@@ -35,7 +35,7 @@
 /* ----------------------------- */
 .section-hero {
   padding: 6.2rem 0 9.6rem;
-  background: linear-gradient(45deg, #f8f9fa, #f1f3f5, #edf2ff);
+  background: var(--brand-gradient);
 }
 
 .hero-wrap {
@@ -88,7 +88,7 @@
 /*--------- HOW */
 /* ----------------------------- */
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 4.8rem;
 }
 .how-wrap {
   padding: 0 3.2rem;
@@ -123,6 +123,7 @@
   position: relative;
   z-index: 1;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .heading-how {
@@ -176,4 +177,61 @@
 }
 .how-text-box:hover {
   border: 1px solid var(--brand-light);
+}
+
+/* ----------------------------- */
+/*--------- TEAM */
+/* ----------------------------- */
+.section-team {
+  padding: 9.6rem 0;
+}
+.team-content {
+  display: grid;
+  gap: 1.6rem;
+}
+.team-wrap {
+  background: var(--brand-gradient);
+  border-radius: var(--border-lr);
+  padding: 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.team-wrap.team-big {
+  padding: 6.4rem 4.8rem;
+  grid-column: 1/-1;
+}
+.space-image {
+  width: 100%;
+}
+.team-img-float {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 1%;
+  bottom: 1%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+.team-img-sm {
+  height: 18rem;
+}
+.team-img-md {
+  height: 24rem;
+}
+
+.team-link {
+  position: absolute;
+  transform: translateY(300%);
+  transition: all 0.3s;
+}
+.team-wrap:hover .team-link {
+  transform: translateY(40%);
+  color: var(--brand-main);
+}
+.team-wrap:hover .team-img-float {
+  transform: scale(1.1);
 }

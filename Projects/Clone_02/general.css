@@ -24,6 +24,7 @@
   --grey-50: #fbfbfd;
   --grey-100: #f6f5f9;
   --grey-200: #e2e2e8;
+  --brand-gradient: linear-gradient(45deg, #f8f9fa, #f1f3f5, #edf2ff);
 }
 
 html {
@@ -133,6 +134,8 @@ img {
 
 .grid {
   display: grid;
+  column-gap: 7.2rem;
+  row-gap: 8.2rem;
 }
 
 .grid--col-2 {
