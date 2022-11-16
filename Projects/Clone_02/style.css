@@ -61,11 +61,119 @@
   color: var(--grey);
 }
 
-.hero-subheading {
+/* ----------------------------- */
+/*--------- HEADER */
+/* ----------------------------- */
+.section-featured {
+  padding: 4.8rem 0 3.2rem;
+}
+
+.featured-img-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8rem;
+}
+.featured-img {
+  height: 3.4rem;
+  opacity: 0.5;
+  filter: brightness(0);
+  transition: all 0.3s ease-in-out;
+}
+.featured-img:hover {
+  opacity: 1;
+  filter: brightness(1);
+}
+
+/* ----------------------------- */
+/*--------- HOW */
+/* ----------------------------- */
+.section-how {
+  padding: 9.6rem 0;
+}
+.how-wrap {
+  padding: 0 3.2rem;
+}
+
+.minor-text {
+  color: var(--grey);
+}
+.how-heading-wrap {
+  max-width: 76rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+.how-text-wrap {
+  display: grid;
+  column-gap: 2rem;
+  color: var(--grey);
+}
+.how-text-box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  padding: 2rem;
+  border: 1px solid var(--grey);
+  border-radius: var(--border-lr);
+  text-decoration: none;
+  color: var(--brand-700);
+  overflow: hidden;
+  column-gap: 1rem;
+  row-gap: 8px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.heading-how {
+  font-size: 2rem;
+}
+
+.how-desciption {
+  grid-column: 1;
+  color: var(--grey);
+}
+
+/* HACK Fix transform */
+.how-number {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  align-self: end;
+  font-size: 4.2rem;
+  color: var(--white);
+  transform: translateY(30%);
+  transition: all 0.5s;
+  /* overflow: hidden; */
+}
+.how-text-box::after {
+  content: "";
+  position: absolute;
   display: inline-block;
-  margin-bottom: 1.2rem;
-  font-size: 1.6rem;
-  color: var(--grey-light);
-  font-weight: 500;
-  text-transform: uppercase;
+  width: 150px;
+  height: 150px;
+  background-color: var(--grey-vlight);
+  bottom: -35.4%;
+  z-index: -1;
+  right: -20%;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.how-text-box:hover::after {
+  transform: scale(1.1);
+  background-color: var(--brand-main);
+}
+/* NOTE add feature to increase fontsize on hover */
+.how-link {
+  grid-row: 3;
+  align-self: end;
+  position: relative;
+  transform: translateY(200%);
+  transition: all 0.3s;
+}
+.how-text-box:hover .how-link {
+  transform: translateY(0);
+  color: var(--brand-main);
+}
+.how-text-box:hover {
+  border: 1px solid var(--brand-light);
 }
