@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./general.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Zeron II</title>
@@ -12,23 +18,83 @@
     <header class="header">
       <div class="header-wrap">
         <div class="header-logo-box">
-          <a class="header-logo-wrap link">Ze<span>ron</span> </a>
+          <a href="#" class="header-logo-wrap link">Ze<span>ron</span> </a>
         </div>
         <div class="header-text-box">
           <div class="header-link-wrap">
             <ul class="list">
-              <li class="header-link-list">Service</li>
-              <li class="header-link-list">Company</li>
-              <li class="header-link-list">Pricing</li>
-              <li class="header-link-list">FAQs</li>
+              <li class="header-link-list">
+                <a class="link header-link" href="#"
+                  ><span class="icon-wrap"
+                    >Service<ion-icon
+                      name="chevron-down-outline"
+                      class="icon--md"
+                    ></ion-icon></span
+                ></a>
+              </li>
+              <li class="header-link-list">
+                <a href="#" class="link header-link">Company</a>
+              </li>
+              <li class="header-link-list">
+                <a class="link header-link" href="#">Pricing</a>
+              </li>
+              <li class="header-link-list">
+                <a class="link header-link" href="#">FAQs</a>
+              </li>
             </ul>
           </div>
           <div class="header-btn-wrap">
-            <a href="#" class="btn header-btn">How it works?</a>
-            <a href="#" class="btn header-btn">Contact</a>
+            <a href="#" class="btn header-btn btn--sm btn--outline"
+              >How it works?</a
+            >
+            <a href="#" class="btn transparent-border btn--sm btn--full"
+              >Contact us</a
+            >
           </div>
         </div>
       </div>
     </header>
+    <section class="section-hero">
+      <div class="hero-wrap">
+        <div class="hero-text-box">
+          <span class="hero-subheading subheading">Travel fearlessly</span>
+          <h1 class="heading-primary">
+            Dare to live the life you’ve always wanted.
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac
+            habitasse platea dictumst .Nulla lorem massa, consequat quis justo
+            in, dapibus dignissim dolor. In hac habitasse platea dictumst.
+          </p>
+          <div class="hero-btn-wrap">
+            <a class="btn btn--md btn--full transparent-border" href="#"
+              >Let’s do this!</a
+            >
+            <a class="btn btn--md btn--outline arrow-down-wrap" href="#"
+              ><span class="icon-wrap"
+                >Learn More<ion-icon
+                  name="arrow-down-outline"
+                  class="arrow-down"
+                ></ion-icon></span
+            ></a>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img
+            src="../../gallery/Illustration/explore_blue.svg"
+            alt="temple"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
