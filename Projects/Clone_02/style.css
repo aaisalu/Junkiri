@@ -235,3 +235,33 @@
 .team-wrap:hover .team-img-float {
   transform: scale(1.1);
 }
+
+/* ----------------------------- */
+/*--------- TESTOMONIAL */
+/* ----------------------------- */
+
+.section-testomonials {
+  padding: 9.6rem 0;
+}
+.testominals-container {
+  padding: 4.2rem 3.4rem;
+  border-radius: var(--border-lr);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.051);
+  transition: all 0.5s;
+}
+.testomoial-img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.quote-img {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-left: auto;
+}
+
+.testominals-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.061);
+}

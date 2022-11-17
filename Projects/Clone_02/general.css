@@ -131,7 +131,10 @@ img {
 .flex {
   display: flex;
 }
-
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
 .grid {
   display: grid;
   column-gap: 7.2rem;
@@ -273,4 +276,23 @@ img {
 .heading-quat {
   font-size: 2rem;
   margin-bottom: 1.2rem;
+}
+
+.bold-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  color: var(--brand-800);
+}
+
+.small-text {
+  font-size: 1.4rem;
+  color: var(--grey);
+}
+
+.minor-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--grey-dark);
+  letter-spacing: 0.4px;
 }
