@@ -7,7 +7,7 @@
 }
 
 :root {
-  --brand-main: #5465ff;
+  --brand-main: #4351cc;
   --brand-light: #4c5be6;
   --brand-900: #080a19;
   --brand-800: #111433;
@@ -90,17 +90,18 @@ img {
   text-decoration: none;
   font-family: inherit;
   color: #e8e9eb;
+  font-weight: 500;
 }
 .btn.btn--outline {
   color: var(--brand-main);
   border: 1px solid #4c5be6;
 }
 .btn--full {
-  background-color: var(--brand-main);
+  background-color: var(--brand-light);
   color: #fff;
 }
 .btn--full:hover {
-  background-color: var(--brand-light);
+  background-color: var(--brand-main);
 }
 .btn--outline:hover {
   background-color: #eef0ff;
@@ -113,15 +114,12 @@ img {
 }
 .btn--md {
   font-size: 1.8rem;
-  font-weight: 500;
   padding: 1.2rem 2.8rem;
-  border-radius: 10px;
   border-radius: var(--border-md);
 }
 .btn--lr {
   font-size: 2rem;
   padding: 1.8rem 3.2rem;
-  border-radius: 18px;
   border-radius: var(--border-lr);
 }
 
@@ -210,6 +208,9 @@ img {
 /* -----------------------------
 ------------> margin
  ----------------------------- */
+.margin-bottom-vsm {
+  margin-bottom: 1.2rem !important;
+}
 .margin-bottom-sm {
   margin-bottom: 1.4rem !important;
 }
@@ -265,12 +266,12 @@ img {
 }
 .heading-secondary {
   font-size: 4.4rem;
-  margin-bottom: 6.2rem;
+  margin-bottom: 3.2rem;
   line-height: 1.2;
 }
 .heading-tertiary {
   font-size: 3.6rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.8rem;
   line-height: 1.2;
 }
 .heading-quat {
