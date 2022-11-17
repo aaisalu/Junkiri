@@ -11,7 +11,7 @@
   max-width: 134rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-  height: 8.2rem;
+  height: 9.6rem;
 }
 .header-logo {
   height: 48.2rem;
@@ -260,8 +260,61 @@
   height: 4.4rem;
   width: 4.4rem;
   margin-left: auto;
+  transition: all 0.2s;
 }
 
 .testominals-container:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.061);
+}
+.testominals-container:hover .quote-img {
+  transform: translateY(-10%);
+}
+
+/* ----------------------------- */
+/*--------- FAQ */
+/* ----------------------------- */
+.section-faq {
+  padding: 9.6rem 0;
+}
+.faq-wrap {
+  max-width: 76rem;
+  margin: 4.8rem auto 0;
+}
+.faqs {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 2.8rem;
+  row-gap: 1.2rem;
+  border: 1px solid var(--grey-vlight);
+  padding: 6px 1.8rem;
+  border-radius: var(--border-sm);
+}
+
+.faq-icon,
+.faq-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--grey-vlight);
+  transition: transform 0.3s;
+}
+.faq-title {
+  color: var(--grey);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.faqs-description {
+  display: none;
+  grid-column: 2/3;
+}
+
+.active-faq .faqs-description {
+  display: block;
+}
+.active-faq {
+  border-top: 2px solid var(--grey-light);
+  padding: 8px 1.8rem 1.8rem;
+}
+.faqs:hover .faq-icon {
+  transform: translateY(20%);
 }
