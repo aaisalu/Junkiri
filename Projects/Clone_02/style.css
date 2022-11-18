@@ -276,7 +276,7 @@
 /*--------- FAQ */
 /* ----------------------------- */
 .section-faq {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 4.8rem;
 }
 .faq-wrap {
   max-width: 76rem;
@@ -297,7 +297,7 @@
 .faq-number {
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--grey-vlight);
+  color: var(--grey-light);
   transition: transform 0.3s;
 }
 .faq-title {
@@ -358,7 +358,7 @@ input[type="checkbox"].toggle-chk {
 }
 
 .toggle-bill {
-  width: 32rem;
+  width: 28rem;
   height: 6rem;
   border-radius: 999px;
   background: var(--brand-gradient);
@@ -372,10 +372,11 @@ input[type="checkbox"].toggle-chk {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 16rem;
+  width: 14rem;
   height: 5rem;
   padding: 2.5rem 0;
-  background: rgba(255, 255, 255, 0.97);
+  background: var(--brand-light);
+  color: var(--white);
   border-radius: 999px;
   left: 2%;
   right: 0;
@@ -486,4 +487,101 @@ input[type="checkbox"].toggle-chk:checked + .toggle-bill::after {
 .pricing:hover {
   transform: translateY(-1.1rem);
   box-shadow: 0 12px 8px rgba(0, 0, 0, 0.051);
+}
+
+/* ----------------------------- */
+/*--------- CTA */
+/* ----------------------------- */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta-container {
+  background: var(--brand-gradient);
+  padding: 5.2rem 6.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.2rem;
+  border-radius: var(--border-md);
+}
+
+.cta-wrap {
+  box-shadow: 0 4px 18px 8px rgba(0, 0, 0, 0.051);
+  border-radius: var(--border-md);
+  padding: 4.2rem 5.8rem;
+}
+
+.cta-img {
+  background: url(../../gallery/Illustration/welcome_o.svg) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.link.cta-link {
+  font-weight: 500;
+  color: var(--brand-main);
+}
+
+.cta-flex {
+  justify-content: space-between;
+}
+
+.cta-label {
+  font-size: 1.6rem;
+  color: var(--brand-800);
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.input-cta {
+  width: 100%;
+  border-radius: var(--border-sm);
+  border: none;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  color: inherit;
+}
+.input-cta::placeholder {
+  color: var(--grey-vlight);
+}
+
+.btn.cta-btn {
+  font-size: 1.8rem;
+  padding: 1.2rem 30px;
+  border-radius: var(--border-sm);
+  letter-spacing: 0.75px;
+}
+
+.cta-policy {
+  font-size: 1.4rem;
+  color: var(--grey);
+  line-height: 1.6;
+  padding: 0 4.8rem;
+  letter-spacing: 0.4px;
+}
+
+.cta-form {
+  margin-bottom: 2.4rem;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap; /* HACK */
+}
+.cta-sm-txt {
+  color: var(--grey-light);
+  padding: 0 3.2rem;
+  vertical-align: middle;
+}
+.line::after,
+.line::before {
+  width: 100%;
+  content: "";
+  top: 2%;
+  position: relative;
+  border-top: 2px solid rgb(234, 236, 237);
 }

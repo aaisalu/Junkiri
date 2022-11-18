@@ -9,6 +9,7 @@
 :root {
   --brand-main: #4351cc;
   --brand-light: #4c5be6;
+  --brand-vlight: #dde0ff;
   --brand-900: #080a19;
   --brand-800: #111433;
   --brand-700: #191e4c;
@@ -89,8 +90,9 @@ img {
   cursor: pointer;
   text-decoration: none;
   font-family: inherit;
-  color: #e8e9eb;
+  color: var(--white);
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 .btn.btn--outline {
   color: var(--brand-main);
@@ -104,7 +106,7 @@ img {
   background-color: var(--brand-main);
 }
 .btn--outline:hover {
-  background-color: #eef0ff;
+  background-color: var(--brand-vlight);
 }
 
 .btn--sm {
@@ -199,10 +201,11 @@ img {
   letter-spacing: 1.2;
   font-family: inherit;
   color: var(--brand-900);
+  transition: all 0.2s ease-in-out;
 }
 
 .link:hover {
-  color: var(--brand-light);
+  color: var(--brand-main);
 }
 
 /* -----------------------------
