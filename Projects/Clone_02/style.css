@@ -364,6 +364,7 @@ input[type="checkbox"].toggle-chk {
   background: var(--brand-gradient);
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.151);
+  cursor: pointer;
 }
 
 .toggle-bill::before {
