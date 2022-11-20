@@ -673,7 +673,7 @@ input[type="checkbox"].toggle-chk:checked + .toggle-bill::after {
 .std-img {
   position: absolute;
   width: 100%;
-  transform: translate(10%, -45%);
+  transform: translate(10%, -40%);
   object-fit: contain;
 }
 
