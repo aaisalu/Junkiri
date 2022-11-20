@@ -3,6 +3,7 @@
 /* ----------------------------- */
 .header {
   background: linear-gradient(175deg, #f8f9fa, #f1f3f5, #edf2ff);
+  position: relative;
 }
 .header-wrap {
   display: flex;
@@ -28,6 +29,17 @@
 }
 .main-logo-wrap span {
   color: var(--brand-main);
+}
+
+.header-menu-wrap {
+  border: none;
+  background: none;
+  font-size: 3.8rem;
+  display: none;
+  cursor: pointer;
+}
+.close-btn {
+  display: none;
 }
 /* ----------------------------- */
 /*--------- SECTION HERO */
@@ -189,35 +201,33 @@
 .team-wrap {
   background: var(--brand-gradient);
   border-radius: var(--border-lr);
-  padding: 4.8rem;
+  padding: 4.2rem 3.8rem;
+  gap: 2.4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  position: relative;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 .team-wrap.team-big {
-  padding: 6.4rem 4.8rem;
+  padding: 4.6rem 4.2rem;
   grid-column: 1/-1;
 }
 .space-image {
   width: 100%;
 }
 .team-img-float {
-  position: absolute;
-  left: auto;
-  top: auto;
-  right: 1%;
-  bottom: 1%;
   object-fit: contain;
   transition: all 0.3s;
+  object-position: end;
+  align-self: flex-end;
 }
 .team-img-sm {
-  height: 18rem;
+  height: 14rem;
 }
 .team-img-md {
-  height: 24rem;
+  height: 16rem;
 }
 
 .team-link {
@@ -227,7 +237,7 @@
   transition: all 0.3s;
 }
 .team-wrap:hover .team-link {
-  transform: translateY(40%);
+  transform: translateY(33%);
   color: var(--brand-main);
 }
 .team-wrap:hover .team-img-float {

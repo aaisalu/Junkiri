@@ -31,6 +31,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
   color: var(--brand-semi-bold);
   font-size: 1.6rem;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 img {
