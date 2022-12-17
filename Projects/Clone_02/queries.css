@@ -35,6 +35,9 @@
   html {
     font-size: 50%;
   }
+  .hero-wrap {
+    grid-template-columns: 1fr;
+  }
   .header-text-box {
     height: 100vh;
     width: 100%;
